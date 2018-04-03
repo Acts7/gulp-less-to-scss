@@ -16,7 +16,7 @@ Setup :
 ### 1 copy the gulpfile.js to project root
 
 ```javascript
-	cp ./node_modules/gulp-less-to-scss/gulpfile.js ./gulpfile.js;
+cp ./node_modules/gulp-less-to-scss/gulpfile.js ./gulpfile.js;
 ```
 
 #### Alternatively copy this to gulpfile.js in project root
