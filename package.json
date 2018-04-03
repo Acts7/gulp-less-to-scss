@@ -1,5 +1,5 @@
 {
-	"name": "gulp-less-to-scss-a7",
+	"name": "gulp-less-to-scss",
 	"version": "0.0.01",
 	"main": "./index.js",
 	"description": "A gulp plugin convert less to scss",
