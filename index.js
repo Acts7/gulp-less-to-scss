@@ -9,7 +9,7 @@ module.exports = function(){
 		content = content.replace(/\/less\//g, '/scss/')
 		.replace(/\.less/g, '.scss')
 		//@を$に変換
-		.replace(/@/g, '$')
+		.replace(/@/g, 'BOOOOOGERS')
 		//argbを除去
 		.replace(/\%\((.*?)\);/g,function(all){
 			var arr = all.match(/argb\(.*?\)/g);
