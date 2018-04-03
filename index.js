@@ -32,6 +32,9 @@ module.exports = function(){
 		.replace(/\.([\w\-]*)\s*\((\.\.\.)\)\s*\{/g, '@mixin $1($arguments$2){')
 		.replace(/\.([\w\-]*)\s*\((.*)\)\s*\{/g, '@mixin $1($2){')
 		.replace(/@mixin\s*([\w\-]*)\s*\((.*)\)\s*\{\s*\}/g, '// @mixin $1($2){}')
+		//.replace(/(when)\s*\((\$(.*?)[\s])(\s*\=\s*)(\w+)\)\s*(.*?$)/g, '{@if $2 == $5 $6}')
+		.replace(/(when)\s*\((\$(.*?)[\s])(\=\s*)(\w+)\)\s*(.*?$)/g, '{@if $2== $5 $6}')	//when (using 1 "=" sign)
+		.replace(/(when)\s*\((\$(.*?))([\s*])(([!<>])?([=>])?(?!<)).?(\w+)\)\s*(.*?$)/g, '{@if $2 $6 $8 $9}')	//when (using non-equal)
 		.replace(/@mixin\s*([\w\-]*)\s*\((.*);(.*)\)/g,function(all){
 			all = all.replace(/;/g,',');
 			return all;
