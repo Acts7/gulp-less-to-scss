@@ -6,12 +6,11 @@ Download
 -------
 
 ```
-# npm install gulp-less-to-scss
 npm install --save Acts7/gulp-less-to-scss
 ```
 
 
-Usage : 
+Setup : 
 -------
 
 ### 1 copy this to gulpfile.js and place in root folder where conversion will happen
@@ -34,6 +33,13 @@ gulp.task('lessToScss',function(){
 	}
 ````
 
+Usage :
+-------
+### Copy the gulpfile to project root & modify as needed. Then run the gulp script.
+````javascript
+cp ./node_modules/gulp-less-to-scss/gulpfile.js ./gulpfile.js;
+gulp lessToScss
+````
 
 
 Notice
