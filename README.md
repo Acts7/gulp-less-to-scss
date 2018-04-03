@@ -29,7 +29,7 @@ gulp.task('lessToScss',function(){
 ### 2 copy this to package.js as a dependency
 ````javascript
 	"dependencies": {
-		"gulp": "^3.9.1",
+		"gulp": "latest",
 		"gulp-less-to-scss": "github:Acts7/gulp-less-to-scss"
 	}
 ````
