@@ -10,15 +10,16 @@ npm install gulp-less-to-scss
 ```
 
 
-Usage
+Usage : copy this to gulpfile.js and place in root folder where conversion will happen
 -------
 
 ```javascript
+var gulp = require('gulp');
 var lessToScss = require('gulp-less-to-scss');
 gulp.task('lessToScss',function(){
-    gulp.src('themes/system/less/*.less')
+    gulp.src('convert/less/**/*.less')
 		.pipe(lessToScss())
-		.pipe(gulp.dest('themes/system/scss'));
+		.pipe(gulp.dest('result/core/scss'));
 });
 ```
 
@@ -32,5 +33,3 @@ LICENSE
 -------
 
 (MIT License)
-
-Copyright (c) 2014 [horicdesign](http://horicdesign.com)

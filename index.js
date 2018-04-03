@@ -29,6 +29,7 @@ module.exports = function(){
 		})
 		.replace(/ e\(/g, ' unquote(')
 		//@mixinの定義
+		.replace(/\.([\w\-]*)\s*\((\.\.\.)\)\s*\{/g, '@mixin $1($arguments$2){')
 		.replace(/\.([\w\-]*)\s*\((.*)\)\s*\{/g, '@mixin $1($2){')
 		.replace(/@mixin\s*([\w\-]*)\s*\((.*)\)\s*\{\s*\}/g, '// @mixin $1($2){}')
 		.replace(/@mixin\s*([\w\-]*)\s*\((.*);(.*)\)/g,function(all){
